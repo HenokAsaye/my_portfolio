@@ -71,7 +71,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <a href="#home" className="font-bold text-xl">
-            <span className="text-blue-500">YN</span>
+            <span className="text-blue-500">HA</span>
           </a>
         </div>
 

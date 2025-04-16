@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Twitter, MessageCircle, Youtube } from "lucide-react"
+import { Github, Linkedin, X, MessageCircle, Youtube } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -20,7 +20,7 @@ export default function Footer() {
               <Linkedin className="w-5 h-5 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors" />
             </Link>
             <Link href="https://twitter.com" target="_blank" aria-label="Twitter">
-              <Twitter className="w-5 h-5 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors" />
+              <X className="w-5 h-5 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors" />
             </Link>
             <Link href="https://telegram.org" target="_blank" aria-label="Telegram">
               <MessageCircle className="w-5 h-5 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors" />
