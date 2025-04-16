@@ -1,10 +1,11 @@
+"use client"
 import Image from "next/image"
+import { Typewriter } from "react-simple-typewriter"
 import {
   Github,
   Linkedin,
   Twitter,
   MessageCircle,
-  Youtube,
   Code,
   Database,
   Server,
@@ -34,9 +35,9 @@ export default function Home() {
           <div className="absolute inset-1 rounded-full bg-white dark:bg-gray-950 flex items-center justify-center overflow-hidden">
             {/* Replace with your own image */}
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src="/Portfolio_photo (1).png"
               alt="Profile"
-              width={300}
+              width={400}
               height={300}
               className="rounded-full object-cover"
               priority
@@ -44,20 +45,48 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-center md:text-left">
-          <p className="text-lg mb-2">👋 Hello, I&apos;m</p>
+        <div className="text-center md:text-left md:w-full">
+          <p className="text-lg mb-2 bg-slate-900 text-white rounded-full w-32 h-10 text-center p-1">
+            👋 Hello, I&apos;m
+          </p>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">
-            Your Name
+            Henok Asaye
           </h1>
-          <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Your Job Title</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-lg mb-6">
-            I specialize in [your expertise]. My expertise in [your skills].
+          <h2 className="text-2xl font-sw-ibold text-gray-700 dark:text-gray-300 mb-4">
+            Full-Stack | Mobile App Developer
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-fit mb-6 text-xl">
+            I build scalable backend systems, automate workflows, and create responsive frontends with React.My
+            expertise in {" "}
+            <span className="text-blue-500 font-mono">
+              <Typewriter
+                words={[
+                  "Express.js",
+                  "TypeScript",
+                  "Nest.js",
+                  "React",
+                  "MongoDb",
+                  "Tailwind Css",
+                  "Python",
+                  "Node.js",
+                  "Next.js",
+                  "PostgresSQL",
+                  "API Design",
+                ]}
+                loop
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
-            <Button asChild className="bg-blue-500 hover:bg-blue-600">
+            <Button asChild className="bg-blue-500 hover:bg-blue-600 hover:-translate-y-2">
               <a href="#contact">Contact Me</a>
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" className=" hover:-translate-y-2">
               <a href="/resume.pdf" download>
                 Download CV
               </a>
@@ -77,16 +106,13 @@ export default function Home() {
             <a href="https://telegram.org" target="_blank" aria-label="Telegram" rel="noreferrer">
               <MessageCircle className="w-6 h-6 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors" />
             </a>
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube" rel="noreferrer">
-              <Youtube className="w-6 h-6 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors" />
-            </a>
           </div>
         </div>
       </section>
 
       {/* Scroll indicator */}
-      <div className="flex justify-center mb-12">
-        <a href="#about" className="animate-bounce">
+      <div className="flex justify-center mb-12 hover:text-blue-500">
+        <a href="#about" className="animate-bounce hover:text-blue-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -97,7 +123,7 @@ export default function Home() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-gray-400"
+            className="text-gray-400 hover:text-blue-500 font-medium text-5xl"
           >
             <path d="M12 5v14M19 12l-7 7-7-7" />
           </svg>
@@ -107,38 +133,87 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">About Me</h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="aspect-square relative rounded-lg overflow-hidden shadow-xl">
-                {/* Replace with your own image */}
-                <Image src="/placeholder.svg?height=600&width=600" alt="About me" fill className="object-cover" />
+          <div className="relative">
+            {/* Vertical Center Line */}
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-500"></div>
+
+            <div className="space-y-16 relative z-10">
+              {/* Timeline Item - Right Side */}
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="md:w-1/2 hidden md:flex justify-end pr-8">{/* Empty for spacing */}</div>
+                <div className="relative md:w-1/2 pl-8">
+                  {/* Dot */}
+                  <div className="absolute -left-8 top-2 w-3 h-3 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
+
+                  {/* Content */}
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+                    <h3 className="text-xl font-semibold mb-2">Full-Stack Developer</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      I specialize in building scalable web applications using modern JavaScript frameworks. My
+                      expertise includes React, Next.js, and Node.js with a focus on creating responsive and
+                      user-friendly interfaces.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Who am I?</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Write your bio here. Describe your background, experience, and what drives you in your professional
-                journey.
-              </p>
+              {/* Timeline Item - Left Side */}
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="relative md:w-1/2 pr-8 text-right">
+                  {/* Dot */}
+                  <div className="absolute -right-8 top-2 w-3 h-3 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
 
-              <h3 className="text-2xl font-semibold pt-4">My Journey</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Share your professional journey, key milestones, and how you got to where you are today.
-              </p>
+                  {/* Content */}
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md inline-block text-left">
+                    <h3 className="text-xl font-semibold mb-2">Backend Specialist</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      I develop robust backend systems using Express.js, Nest.js, and various database technologies. My
+                      experience includes designing RESTful APIs, implementing authentication systems, and optimizing
+                      database performance.
+                    </p>
+                  </div>
+                </div>
+                <div className="md:w-1/2 hidden md:flex justify-start pl-8">{/* Empty for spacing */}</div>
+              </div>
 
-              <h3 className="text-2xl font-semibold pt-4">Education</h3>
-              <ul className="list-disc pl-5 text-gray-600 dark:text-gray-400">
-                <li>Degree, University Name (Year)</li>
-                <li>Certification, Institution (Year)</li>
-              </ul>
+              {/* Timeline Item - Right Side */}
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="md:w-1/2 hidden md:flex justify-end pr-8">{/* Empty for spacing */}</div>
+                <div className="relative md:w-1/2 pl-8">
+                  {/* Dot */}
+                  <div className="absolute -left-8 top-2 w-3 h-3 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
 
-              <h3 className="text-2xl font-semibold pt-4">Interests</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Share your personal interests, hobbies, or activities you enjoy outside of work.
-              </p>
+                  {/* Content */}
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+                    <h3 className="text-xl font-semibold mb-2">Mobile App Development</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      I build cross-platform mobile applications that deliver native-like experiences. My toolkit
+                      includes React Native and related technologies for creating performant and beautiful mobile
+                      interfaces.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item - Left Side */}
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="relative md:w-1/2 pr-8 text-right">
+                  {/* Dot */}
+                  <div className="absolute -right-8 top-2 w-3 h-3 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
+
+                  {/* Content */}
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md inline-block text-left">
+                    <h3 className="text-xl font-semibold mb-2">DevOps & Cloud Services</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      I implement CI/CD pipelines and manage cloud infrastructure using Docker, Kubernetes, and various
+                      cloud platforms. My experience ensures applications are deployed efficiently and scale reliably.
+                    </p>
+                  </div>
+                </div>
+                <div className="md:w-1/2 hidden md:flex justify-start pl-8">{/* Empty for spacing */}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +227,7 @@ export default function Home() {
             Here are some of the projects I've worked on. Each project represents a unique challenge and solution.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <a href="#" className="group">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
@@ -383,7 +458,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-gray-600 dark:text-gray-400">your.email@example.com</p>
+                      <p className="text-gray-600 dark:text-gray-400">henokasaye77@gmail.com</p>
                     </div>
                   </div>
 
@@ -393,7 +468,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-medium">Phone</h3>
-                      <p className="text-gray-600 dark:text-gray-400">+1 (123) 456-7890</p>
+                      <p className="text-gray-600 dark:text-gray-400">+251910152982</p>
                     </div>
                   </div>
 
@@ -403,7 +478,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-medium">Location</h3>
-                      <p className="text-gray-600 dark:text-gray-400">City, Country</p>
+                      <p className="text-gray-600 dark:text-gray-400">AddisAbaba,Ethiopia</p>
                     </div>
                   </div>
                 </CardContent>
@@ -419,13 +494,13 @@ export default function Home() {
                         <label htmlFor="name" className="text-sm font-medium">
                           Your Name
                         </label>
-                        <Input id="name" name="name" placeholder="John Doe" required />
+                        <Input id="name" name="name" placeholder="Your Name ..." required />
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium">
                           Your Email
                         </label>
-                        <Input id="email" name="email" type="email" placeholder="john@example.com" required />
+                        <Input id="email" name="email" type="email" placeholder="henokasaye77@gmail.com" required />
                       </div>
                     </div>
 
