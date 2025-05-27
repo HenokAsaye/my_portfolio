@@ -205,10 +205,10 @@ export default function Home() {
 
                   {/* Content */}
                   <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md inline-block text-left">
-                    <h3 className="text-xl font-semibold mb-2">DevOps & Cloud Services</h3>
+                    <h3 className="text-xl font-semibold mb-2">Data Structures and Algorithms</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      I implement CI/CD pipelines and manage cloud infrastructure using Docker, Kubernetes, and various
-                      cloud platforms. My experience ensures applications are deployed efficiently and scale reliably.
+                      I am very passionate about data structures and algorithms. I have a strong understanding of the
+                      fundamental concepts and their applications in real-world problems. 
                     </p>
                   </div>
                 </div>
@@ -229,88 +229,115 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
-            <a href="#" className="group">
+            <a href="https://github.com/HenokAsaye/Hosptal-Management-System" className="group">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project Title 1"
+                    src="/Hms.jpg"
+                    alt="Hospital Management System"
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
-                    Project Title 1
+                    Hospital Management System
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Short description of the project. What technologies you used and what problem it solves.
+                    A web application for managing hospital operations, including patient records, appointments, and doctor schedules,lab reports and more.
+                    Technologies used: React, Node.js, Express.js, MongoDB, Css, and more.
                   </p>
                 </CardContent>
               </Card>
             </a>
 
             {/* Project 2 */}
-            <a href="#" className="group">
+            <a href="https://github.com/HenokAsaye/Community_Repair_Hub_2024_25" className="group">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project Title 2"
+                    src="/CommunityReapairHUn.jpg"
+                    alt="Project 2"
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
-                    Project Title 2
+                   Community Repair Hub
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Short description of the project. What technologies you used and what problem it solves.
+                   Community Repair Hub is a mobile application designed to help citizens report and track public infrastructure issues such as potholes, broken streetlights, and water leaks. The app connects users with local repair teams, ensuring faster issue resolution and improved urban maintenance.
+                   Technologies used: Kotlin, Express.js, MongoDB, Jetpack Compose,Multer.
                   </p>
                 </CardContent>
               </Card>
             </a>
 
             {/* Project 3 */}
-            <a href="#" className="group">
+            <a href="https://github.com/HenokAsaye/Abe_Garage_Evangadi_Project" className="group">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project Title 3"
+                    src="/AbeGarage.jpg"
+                    alt="Abe Garage"
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
-                    Project Title 3
+                    Abe Garage
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Short description of the project. What technologies you used and what problem it solves.
+                     A Full-Stack web application for managing vehicle maintenance and repair services.
+                     Technologies used: React, Node.js, Express.js, MongoDB, TailwindCss, and more.
                   </p>
                 </CardContent>
               </Card>
             </a>
 
             {/* Project 4 */}
-            <a href="#" className="group">
+            <a href="https://github.com/HenokAsaye/Abe_Garage_Evangadi_Project" className="group">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project Title 4"
+                    src="/CommunityReapairHUn.jpg"
+                    alt="CommunityRepairHUn.jpg"
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
-                    Project Title 4
+                    Community Repair Hub(Flutter Version)
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Short description of the project. What technologies you used and what problem it solves.
+                    A mobile application for reporting and tracking public infrastructure issues, similar to the original Community Repair Hub but built with Flutter.
+                    Technologies used: Flutter, Dart, Express.js, MongoDB, and more.
+                  </p>
+                </CardContent>
+              </Card>
+            </a>
+
+            {/* Project 5 */}
+            <a href="https://github.com/Hermi-git/Kuriftu-Admin" className="group">
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="aspect-video relative">
+                  <Image
+                    src="/Kuriftu.jpg"
+                    alt="Project Title 4"
+                    fill
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
+                    Alx Hospitality Hachaton Project
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                  A web application for managing hotel operations, including room bookings, customer management, and inventory tracking.
+                  Technologies used:Next.js,TailwindCss,Shadcn, and more.
                   </p>
                 </CardContent>
               </Card>
@@ -354,7 +381,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Backend Development</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["Node.js", "Express", "Python", "Django", "PHP"].map((skill, index) => (
+                  {["Node.js", "Express", "Nest.js", "", "Next.js"].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
                       {skill}
@@ -387,10 +414,10 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Settings className="w-6 h-6 text-orange-500" />
-                  <h3 className="text-xl font-semibold">DevOps</h3>
+                  <h3 className="text-xl font-semibold">Mobile Development</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["Docker", "Kubernetes", "CI/CD", "Jenkins", "GitHub Actions"].map((skill, index) => (
+                  {["Flutter", "Kotlin", "Jetpack Compose"].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
                       {skill}
@@ -405,10 +432,10 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Cloud className="w-6 h-6 text-sky-500" />
-                  <h3 className="text-xl font-semibold">Cloud Services</h3>
+                  <h3 className="text-xl font-semibold">Telegram Bot Development</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["AWS", "Azure", "Google Cloud", "Heroku", "Vercel"].map((skill, index) => (
+                  {["Telegram Bot", "Telegram Bot API", "Telegraf.js"].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-sky-500 rounded-full"></span>
                       {skill}
@@ -426,7 +453,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Web Services</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["RESTful APIs", "GraphQL", "WebSockets", "Microservices"].map((skill, index) => (
+                  {["RESTful APIs", "Microservices"].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span>
                       {skill}
